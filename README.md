@@ -5,7 +5,7 @@
 
 :iphone: Telegram-канал - [@phpquiz](https://t.me/phpquiz)
 
-:bar_chart: Вопросов - 1.
+:bar_chart: Вопросов - 2.
 
 :pencil: Вы можете добавить свой вопрос или обьяснение, исправить/дополнить существующий с помощью пул реквеста :)
 
@@ -38,6 +38,30 @@ var_dump(foo('1'));
 Fatal error:  Void type cannot be nullable
 </details>
 
+</details>
+
+<details>
+<summary><b>2. Что выведет код?</b></summary><br>
+
+```php
+<?php
+
+function printer() {  
+    while (true) {     
+        echo yield;       
+    }                             
+}                                
+
+$print = printer();
+$print->send('Hello ');
+$print->send('proghub');
+$print->send('!');
+```
+
+
+<details>
+<summary><b>Ответ</b></summary><br>
+Hello proghub!
 </details>
 
 </details>
